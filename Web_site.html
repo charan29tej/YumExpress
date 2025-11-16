@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.bunny.net">
+<link href="https://fonts.bunny.net/css?family=open-sans:400,600" rel="stylesheet" />
+    <title>Food Web Site</title>
+</head>
+<body>
+    <!-- sidebar -->
+    <div class="sidebar">
+        <!-- Logo -->
+        <h1 class="logo">Yum Express</h1>
+        <!-- List of Menu -->
+         <div class="sidebar-menus">
+            <a href="#"><ion-icon name="storefront-outline"></ion-icon>Home</a>
+            <a href="#"><ion-icon name="receipt-outline"></ion-icon>Bills</a>
+            <a href="#"><ion-icon name="wallet-outline"></ion-icon>Wallet</a>
+            <a href="#"><ion-icon name="notifications-outline"></ion-icon>Notification</a>
+            <a href="#"><ion-icon name="chatbubble-outline"></ion-icon>Contact Us</a>
+            <a href="#"><ion-icon name="settings-outline"></ion-icon>Settings</a>
+         </div>
+         <!-- Logout -->
+         <div class="sidebar-logout">
+            <a href="#"><ion-icon name="log-out-outline"></ion-icon>Logout</a>
+
+         </div>
+
+    </div>
+    <!-- main -->
+<div class="main">
+    <!-- main  navbar -->
+     <div class="main-navbar">
+        <ion-icon class="menu-toggle" name="menu-outline" ></ion-icon>
+        <!-- screach bar -->
+         <div class="search">
+            <input type="text" placeholder="What you want to eat now ">
+            <button class="search-btn">Search</button>
+         </div>
+         <div class="profile">
+            <a href="#" class="cart"><ion-icon name="cart-outline"></ion-icon></a>
+            <a href="#" class="user"><ion-icon name="person-outline"></ion-icon></a>
+         </div>
+         </div>
+                <!-- main - highlight -->
+                 <div class="main-highlight">
+                    <!-- tittle section -->
+                    <div class="main-header">
+                    <h2 class="main-title">Suggested to You</h2>
+
+                     <div class="main-arrows">
+                        <ion-icon class="back" name="chevron-back-circle-outline"></ion-icon> 
+                        <ion-icon class="next" name="chevron-forward-circle-outline"></ion-icon> 
+                        </div>
+                     </div>
+                 </div>
+                <!-- main menu /orders -->
+                 <div class="suggested-items">
+    <div class="food-card">
+        <img src="images/pizza.jpg" alt="Pizza" class="food-image" />
+        <h3 class="food-name">Pizza Plain</h3>
+        <p class="food-description">Cheesy pepperoni with fresh veggies</p>
+        <p class="food-price">99</p>
+    </div>
+    <div class="food-card">
+        <img src="images/burger.jpg" alt="Burger" class="food-image" />
+        <h3 class="food-name">Burger Queen</h3>
+        <p class="food-description">Juicy beef patty with lettuce and tomato</p>
+        <p class="food-price">79</p>
+    </div>
+    <div class="food-card">
+        <img src="images/salad.jpg" alt="Salad" class="food-image" />
+        <h3 class="food-name">Salad Home</h3>
+        <p class="food-description">Mixed greens with vinaigrette dressing</p>
+        <p class="food-price">59</p>
+    </div>
+</div>
+
+
+     </div>
+</div>
+
+</body>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</html>

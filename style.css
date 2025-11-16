@@ -1,0 +1,214 @@
+:root{
+    --primary-color: #0e6253;
+    --sceondary-color:#ffc107;
+    --whitecolor:#fff;
+    --blackcolor:#222;
+    --greycolor:#f5f5f5;
+    --darkgreycolor:#a7a7a7;
+    --softgreencolor:#d9f2ee;
+}
+*{
+    outline : none;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+body{
+    display: flex;
+    width: 100%;
+    height:auto;
+}
+.sidebar{
+    position: fixed;
+    height:100%;
+    width: 250px ;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    top:0;
+    left:0;
+    padding:2%;
+    background-color: var(--primary-color);
+    color: var(--whitecolor);
+}
+.sidebar-menus{
+    display: flex;
+    flex-direction: column;
+
+}
+.sidebar-menus a,.sidebar-logout a{
+    text-decoration: none;
+    display: flex;
+    padding: 5% 8%;
+    margin: 0.5rem 0;
+    justify-content: flex-start;
+    align-items: center;
+    color: var(--whitecolor);
+    gap: 16px;
+}
+.sidebar-menus a ion-icon,.sidebar-logout a ion-icon{
+    font-size: 25px;
+}
+.sidebar-menus a:hover,.sidebar-logout a:hover{
+    background-color: var(--sceondary-color);
+    border-radius: 50px;
+}
+.main{
+    width: 100%;
+    height:max-content ;
+    min-height: 100vh;
+    padding: 2%;
+    background-color: var(--softgreencolor);
+    margin-left: 250px;
+}
+.main-navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* hiding the button to view in mobile b r o */
+.menu-toggle{
+    display: none;
+}
+.search{
+    width: 60%;
+    height: 40px;
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--whitecolor);
+    border-radius: 20px;
+    
+}
+.search input{
+    width:80% ;
+    height: 100%;
+    padding: 2px;
+    border: none;
+    border-radius: 20px;
+}
+
+.search-btn{
+    background-color: var(--sceondary-color);
+    color: var(--whitecolor);
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    width: 120px;
+}
+.search:hover{
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.search-btn:hover {
+    background-color: var(--primary-color);
+}
+.profile{
+    display:flex;
+    align-items: center;
+    gap: 10px;
+
+}
+.cart,.user{
+    font-size: 20px;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    padding: 0 10px;
+    display: flex;
+    height: 40px;
+    background-color: var(--whitecolor);
+    color: var(--primary-color);
+    border: none;
+    border-radius: 20px;
+}
+.cart:hover,.user:hover{
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.main-highlight{
+    padding: 2%;
+    margin: 4% 0;
+    background-color: var(--sceondary-color);
+    border: none;
+    border-radius: 9px;
+}
+.main-header{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+     
+}
+.main-title{
+    font-size: 20px;
+}
+main.arrow{
+    font-size: 24px;
+}
+.back,.next{
+    cursor: pointer;
+    font-size: 24px;
+}
+.back:hover,.next:hover{
+    color: var(--primary-color);
+}
+.main-arrows ion-icon {
+    font-size: 28px;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: color 0.3s ease;
+}
+
+.main-arrows ion-icon:hover {
+    color: var(--primary-color);
+}
+
+/* Suggested Items Section */
+.suggested-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+/* Single card for food item */
+.food-card {
+    background: var(--whitecolor);
+    border-radius: 12px;
+    padding: 15px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease;
+}
+
+.food-card:hover {
+    transform: scale(1.05);
+}
+
+.food-image {
+    width: 160px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.food-name {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 6px;
+    color: var(--primary-color);
+}
+
+.food-description {
+    font-size: 14px;
+    color: var(--darkgreycolor);
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.food-price {
+    font-weight: 700;
+    font-size: 16px;
+    color: var(--sceondary-color);
+}
